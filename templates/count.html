@@ -1,0 +1,17 @@
+<h1>YOur text has {{count}} word</h1>
+
+<h3> <a href='{% url 'home' %}'> Type again </a> </h3>
+
+<h1> Your text:</h1>
+
+{{text}}
+
+<h2> Word used most: <h2>
+
+  {% for word, count in fullInfo %}
+
+  {{word}} <br>
+
+  {{count}} <br><br>
+
+  {% endfor %}
